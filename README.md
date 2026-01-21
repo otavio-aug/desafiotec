@@ -34,13 +34,15 @@ Após clonar o projeto, vá até o diretório em que ele está localizado, e uti
 
 Agora, vamos realizar algumas verificações, abra o arquivo ".env", e procure por "DB_CONNECTION", aqui, encontraremos um bloco onde você deverá mudar os dados.
 
-`
-DB_HOST=Caso a conexão seja local, 127.0.0.1, caso não, informar o endereço
-DB_PORT=Porta do mysql (3306 padrão)
-DB_DATABASE=Nome do banco utilizado (crie um)
-DB_USERNAME=Username para conexão ao banco (padrão root)
-DB_PASSWORD=Senha para conexão ao banco (padrão do xampp vazia)
-`
+`DB_HOST=Caso a conexão seja local, 127.0.0.1, caso não, informar o endereço`
+
+`DB_PORT=Porta do mysql (3306 padrão)`
+
+`DB_DATABASE=Nome do banco utilizado (crie um)`
+
+`DB_USERNAME=Username para conexão ao banco (padrão root)`
+
+`DB_PASSWORD=Senha para conexão ao banco (padrão do xampp vazia)`
 
 Após, voltaremos ao terminal e utilizaremos:
 
