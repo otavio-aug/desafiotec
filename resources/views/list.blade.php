@@ -38,8 +38,16 @@
               {{ $user->created_at }}
             </td>
             <td class="px-4 py-4 text-sm">
-              <button class="cursor-pointer text-blue-600 font-medium mr-4">Edit</button>
-              <button class="cursor-pointer text-red-600 font-medium">Delete</button>
+              <a href="/users/{{ $user->id }}/edit">
+                <button class="cursor-pointer text-blue-600 font-medium mr-4">Edit</button>
+              </a>
+                <form action="/users/{{ $user->id }}" method="POST"
+                  onsubmit="return confirm('Tem certeza que deseja excluir?')">
+                  @csrf
+                  @method('DELETE')
+
+                  <button type="submit" class="cursor-pointer text-red-600 font-medium">Delete</button>
+                </form>
             </td>
           </tr>
         </tbody>

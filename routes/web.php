@@ -15,3 +15,7 @@ Route::get('/register', function () {
 });
 
 Route::post('/register', [UserController::class, 'store']);
+
+Route::get('/users/{user}/edit', [UserController::class, 'edit']);
+Route::put('/users/{user}', [UserController::class, 'update']);
+Route::delete('/users/{user}', [UserController::class, 'destroy']);
